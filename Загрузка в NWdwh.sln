@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Загрузка в NWdwh", "Загрузка в NWdwh.dtproj", "{BA55F7D3-6962-496E-962A-01749E331387}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA55F7D3-6962-496E-962A-01749E331387}.Development|Default.ActiveCfg = Development
+		{BA55F7D3-6962-496E-962A-01749E331387}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B75CB01B-1B3A-4773-A538-1E404F54C6E2}
+	EndGlobalSection
+EndGlobal

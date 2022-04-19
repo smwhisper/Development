@@ -1,0 +1,223 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/11/2021 8:06:17 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-DKDJTG6F"
+  DTS:CreatorName="LAPTOP-DKDJTG6F\Anna A Remizova"
+  DTS:DTSID="{1F2A119A-43E8-4B28-8758-9E06CF96D2FC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.166"
+  DTS:LocaleID="1049"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{ABB5D940-BDA1-4AEA-A706-C7B86DE7B8B0}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL.Samorodov.SU.[Northwind (упрощённая)].Ремизова Анна Андреевна]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{78A0A0B9-31D6-416F-BADB-9A723517BE11}"
+      DTS:ObjectName="SQL.Samorodov.SU.[Northwind (упрощённая)].Ремизова Анна Андреевна">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SQL.Samorodov.SU;User ID=Ремизова Анна Андреевна;Initial Catalog=Northwind (упрощённая);Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0BC7bdWudUidBhlPCIT9cQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABXLkVgbQbtpXTkRAzEChDgGlKssVMMaVwI9irpK6c1twAAAAAOgAAAAAIAACAAAADYyXOVpbiSuQb60tJnT2uyhpgJWElfk19AsuTRcPnOOSAAAADxG57ufamwcr41nQ0Sk26PPORKVoHGJz+3RfT6Y7h3EUAAAAD6azhxrKByKDBNNJ9TB4ee58jtop9eDKG/VeG7aX0HfeGB7pPOqqgTxWO03bLgh79rWVtdplq09z3i1ceu50B4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[sql.samorodov.su.Ремизова Анна Андреевна.Ремизова Анна Андреевна]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E556E672-1C21-415C-BEF4-3DED9CCE4C9E}"
+      DTS:ObjectName="sql.samorodov.su.Ремизова Анна Андреевна.Ремизова Анна Андреевна">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=sql.samorodov.su;User ID=Ремизова Анна Андреевна;Initial Catalog=Ремизова Анна Андреевна;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0BC7bdWudUidBhlPCIT9cQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB5+/aHT6AQvcJClqGQqw1MYNskSCYbukKmhp+oxTLn7AAAAAAOgAAAAAIAACAAAAAUsGVMTnJ03wPfgsn3pwh9R54q5poTeS4XpZF3TqxwKSAAAAAbqwIc9TlDPr2FMONGptKtWHQJJPI7kLMKD8YHp0YByEAAAABKIHb1o1aDvvb4TWzSs0mk8o+1TCl/AxL/ULIYpS7VVCpz21dCAmRSzRqT+Zu/IlbT5PB8yt5ufxVB/I81PQJk</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Выполнение пакета Загрузка Orders"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Задача &quot;Выполнение пакета&quot;"
+      DTS:DTSID="{B17D5EF8-D38B-4D16-9804-493FB487DFF0}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Выполнение пакета Загрузка Orders"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Загрузка Orders.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Загрузка справочников"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Контейнер последовательности"
+      DTS:DTSID="{A14EE689-9A6A-4D2A-9D4B-27A77ED9A898}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Загрузка справочников">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Загрузка справочников\Задача &quot;Выполнение пакета&quot; Загрузка Employees"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Задача &quot;Выполнение пакета&quot;"
+          DTS:DTSID="{1822E7EC-59A8-4D52-8C20-919FFD68D113}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Задача &quot;Выполнение пакета&quot; Загрузка Employees"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Загрузка Employees.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Загрузка справочников\Задача &quot;Выполнение пакета&quot; Загрузка Products"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Задача &quot;Выполнение пакета&quot;"
+          DTS:DTSID="{B8C72870-2CC6-4264-8185-8DCCFA4F6470}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Задача &quot;Выполнение пакета&quot; Загрузка Products"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Загрузка Products.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Загрузка справочников\Задача &quot;Выполнение пакета&quot; Загрузка Клиентов"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Задача &quot;Выполнение пакета&quot;"
+          DTS:DTSID="{1B5B8B3C-DA53-4DCE-B277-70908A76E9E3}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Задача &quot;Выполнение пакета&quot; Загрузка Клиентов"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Загрузка Клиентов.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Ограничение]"
+      DTS:CreationName=""
+      DTS:DTSID="{82665D29-AC42-4F87-A6AB-7183EE5895D5}"
+      DTS:From="Package\Загрузка справочников"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Ограничение"
+      DTS:To="Package\Выполнение пакета Загрузка Orders"
+      DTS:Value="2" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--В данном разделе CDATA содержатся сведения о макете пакета. В данном разделе содержатся сведения о координатах (x,y), ширине и высоте.-->
+<!--В случае возникновения ошибки при редактировании этого раздела вручную его можно удалить. -->
+<!--Пакет можно загрузить обычным образом, но прежние сведения о макете будут утеряны, и конструктор автоматически перераспределит элементы в области конструктора.-->
+<Objects
+  Version="8">
+  <!--Все приведенные ниже узлы будут содержать свойства, не влияющие на поведение среды выполнения.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="256,41.6"
+          Id="Package\Выполнение пакета Загрузка Orders"
+          TopLeft="105.952376742211,362.390479070498" />
+        <NodeLayout
+          Size="220.8,41.6"
+          Id="Package\Загрузка справочников\Задача &quot;Выполнение пакета&quot; Загрузка Employees"
+          TopLeft="23.9333302206464,27.8000007232031" />
+        <NodeLayout
+          Size="311.2,41.6"
+          Id="Package\Загрузка справочников\Задача &quot;Выполнение пакета&quot; Загрузка Products"
+          TopLeft="22.2666636202072,84.1333345042335" />
+        <NodeLayout
+          Size="316,41.6"
+          Id="Package\Загрузка справочников\Задача &quot;Выполнение пакета&quot; Загрузка Клиентов"
+          TopLeft="21.4333303199875,142.200001632373" />
+        <ContainerLayout
+          HeaderHeight="43.2"
+          IsExpanded="True"
+          PanelSize="420.8,204.8"
+          Size="420.8,248"
+          Id="Package\Загрузка справочников"
+          TopLeft="54.0476168999598,39.0000003099443" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Ограничение]"
+          TopLeft="264.44761689996,287.000000309944">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-30.4952401577486,75.3904787605535"
+              Start="0,0"
+              End="-30.4952401577486,67.8904787605535">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.6952393802768" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.6952393802768"
+                    Point2="0,37.6952393802768"
+                    Point3="-4,37.6952393802768" />
+                  <mssgle:LineSegment
+                    End="-26.4952401577486,37.6952393802768" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-26.4952401577486,37.6952393802768"
+                    Point2="-30.4952401577486,37.6952393802768"
+                    Point3="-30.4952401577486,41.6952393802768" />
+                  <mssgle:LineSegment
+                    End="-30.4952401577486,67.8904787605535" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-44.1269364851243,42.6952393802768,57.7586328125,11.4140625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
