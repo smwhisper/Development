@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAPTOP-DKDJTG6F</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0BC7bdWudUidBhlPCIT9cQAAAAACAAAAAAAQZgAAAAEAACAAAACOSATnHeohgrqA9GsKdwTzHo7gcgjcH3wvi13YmpAr4AAAAAAOgAAAAAIAACAAAACfk9QCYO2SeiL9DqKGCYkRVLvGH7CxxrI92nMnpi3hRpAAAAAjKYx5qDeBNnPDQVciDeOd/ll0GQ/YTwKKziqWB6Y4qyawoQ6h/3EOYuaALbkTqkZX4r7hZSmLFipDeEj+GepIG4+CWmpT4CDFCLa7wHX0vjAL5Tr4lRG8BIkukRB9MpyA/XFHUch4F6hEDMjQkkT5n83xeLndv5BOPQpgAun0CBHdhxoe2udD6DivFAtdjMhAAAAAAxzT8rMvA3ELGIslYEJKwazffKwP/JbT/eGZsMEcMBcBKEHQeFXEWA9/Hv1qdfh87vRs9/4zqkhx/2qewiWhbA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcrnXuWYJKUCL2UrAwSpMaQAAAAACAAAAAAAQZgAAAAEAACAAAACHTI2llTHwFh1sPBQ9c15l9sCPTbCKUKsgB6we4EiAcwAAAAAOgAAAAAIAACAAAADitP0C203pqYDOSHtXUEw55HrypZY02yl0EASGoig0/5AAAAD2Th0K5T09YFntTeLgipS+InlhOn4/dC8wt2BJrzJId9SafEK2avBLwv5Kjf4EDFp5+jWjttjbYDELzxGEL6wdeX2eD1JFdffoeg6moemXNVZi+ckNZ6CkaOLtiyu/6ttELQC43+0sn66rHdaZ8kSAEtrOYRUYIAD5Exv3hk7liS4dYcFPuk8lY7Mi43pcKRFAAAAAiIm9LM8EH8QG+Z5P9jtZLmVOne+FItebHN7uX9Ism5Xz01EnllXhJl5pi3WYI++qT3XwSqJYxHxisYuK8Bp7oQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,6 +35,7 @@
           <SSIS:Package SSIS:Name="Загрузка Products.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Загрузка Orders.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Загрузка в NWdwh.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="E-mail.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
@@ -1310,10 +1311,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">16</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C2D0D410-4033-44A5-9395-6AD6FAA5FFA3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{ABB5D940-BDA1-4AEA-A706-C7B86DE7B8B0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1619,6 +1620,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="E-mail.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{99DD0E7A-3CD0-4C2E-86E3-B795EFD7ABD0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C93B0438-27C3-4D39-8EB3-863AFF0AE79F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
